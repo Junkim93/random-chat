@@ -1,0 +1,62 @@
+a {
+  text-decoration: none;
+  color: #f7f7f7;
+}
+
+body {
+  background-image: linear-gradient(to right, #114c33, #26674b);
+  font-family: "Rajdhani", "Nanum Gothic", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  color: rgb(34, 36, 34);
+}
+
+input {
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  width: 450px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 15px;
+  padding: 5px 15px 5px 15px;
+  -webkit-box-shadow: 0 6px 6px -6px #777;
+  -moz-box-shadow: 0 6px 6px -6px #777;
+  box-shadow: 0 6px 6px -6px #777;
+}
+
+input:focus {
+  outline: 0;
+}
+
+button {
+  border: none;
+  background-color: #f7f7f7;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.bg {
+  background-color: #f7f7f7;
+  width: 820px;
+  height: 760px;
+  box-shadow: inset #ffffff 0px 0px 10px 20px,
+    rgba(0, 0, 0, 0.5) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.043) 0px -6px 16px -6px;
+  border-radius: 3px;
+}
+
+.bg .box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0px 200px 0px;
+}
