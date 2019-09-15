@@ -64,11 +64,6 @@ export default {
       this.messages = [...this.messages, data];
     });
 
-    this.socket.on("connections", length => {
-      this.connections = length;
-      this.isConnectionMessage();
-    });
-
     this.socket.on("chat start", data => {
       this.room = data.room;
       this.connected = true;
@@ -121,14 +116,6 @@ export default {
 
     isAuthenticated() {
       return store.getters.isAuthenticated;
-    },
-
-    isConnectionMessage() {
-      if (Number(this.connections) <= 1) {
-        this.connectionsMessage = this.connections + " user is joining";
-      } else {
-        this.connectionsMessage = this.connections + " users are joining";
-      }
     }
   }
 };

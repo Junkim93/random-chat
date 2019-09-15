@@ -4,7 +4,7 @@ import bcrypt from 'bcryptjs';
 
 export const getHome = async (req, res) => {
   let user;
-  if (req.headers.authorization !== undefined) {
+  if (req.headers.authorization !== 'undefined') {
     try {
       user = auth.verify(req.headers.authorization);
       user = await models.User.findOne({

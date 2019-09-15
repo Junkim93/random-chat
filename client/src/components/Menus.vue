@@ -5,7 +5,7 @@
 
       <router-link to="/register" class="header__join">JOIN</router-link>
 
-      <router-link v-if="isAuthenticated" to="/logout">LOGOUT</router-link>
+      <router-link to="/logout" v-if="isAuthenticated">LOGOUT</router-link>
       <router-link to="/login" v-else class="header__login">LOGIN</router-link>
 
       <router-link to="/me" class="header__me">ME</router-link>
